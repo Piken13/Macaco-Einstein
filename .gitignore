@@ -1,0 +1,15 @@
+# Ambiente virtual Python
+.venv/
+
+# Arquivos de build do PyInstaller
+build/
+dist/
+*.spec
+
+# Cache do Python
+__pycache__/
+*.pyc
+
+# Arquivos do sistema
+desktop.ini
+Thumbs.db
