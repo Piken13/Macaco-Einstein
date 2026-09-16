@@ -492,7 +492,7 @@ COR_BORDER       = "#45475a"
 class ConversorApp:
     def __init__(self, root: tk.Tk):
         self.root = root
-        self.root.title("🔄 Conversor Universal de Arquivos")
+        self.root.title("🐒 Conversor Universal GeniusMonkey")
         self.root.geometry("750x680")
         self.root.configure(bg=COR_BG)
         self.root.minsize(650, 600)
@@ -523,16 +523,16 @@ class ConversorApp:
         frame_titulo.pack(fill="x", pady=(10, 20))
 
         tk.Label(
-            frame_titulo, text="🔄 Conversor Universal", font=("Segoe UI", 22, "bold"),
+            frame_titulo, text="🐵 Conversor Universal GeniusMonkey", font=("Segoe UI", 22, "bold"),
             fg=COR_ACCENT, bg=COR_BG,
         ).pack()
         tk.Label(
-            frame_titulo, text="Imagens • PDFs • Word • Texto • HTML • Markdown • Ícones",
+            frame_titulo, text="🧠 Imagens • PDFs • Word • Texto • HTML • Markdown • Ícones 🍌",
             font=("Segoe UI", 10), fg=COR_TEXTO_DIM, bg=COR_BG,
         ).pack()
 
         # ── Card: Arquivo de Entrada ──
-        card1 = self._criar_card(container, "📁 ARQUIVO DE ENTRADA")
+        card1 = self._criar_card(container, "🐒 ARQUIVO DE ENTRADA")
 
         frame_entrada = tk.Frame(card1, bg=COR_BG_CARD)
         frame_entrada.pack(fill="x", pady=(5, 0))
@@ -559,7 +559,8 @@ class ConversorApp:
         self.lbl_info_entrada.pack(fill="x", pady=(5, 0))
 
         # ── Card: Formato de Saída ──
-        card2 = self._criar_card(container, "🎯 FORMATO DE SAÍDA")
+        card2 = self._criar_card(container, "🙈 FORMATO DE SAÍDA")
+
 
         self.frame_formatos = tk.Frame(card2, bg=COR_BG_CARD)
         self.frame_formatos.pack(fill="x", pady=(5, 0))
@@ -572,7 +573,7 @@ class ConversorApp:
         self.lbl_sem_formato.pack(anchor="w")
 
         # ── Card: Arquivo de Saída ──
-        card3 = self._criar_card(container, "💾 ARQUIVO DE SAÍDA")
+        card3 = self._criar_card(container, "🙉 ARQUIVO DE SAÍDA")
 
         frame_saida = tk.Frame(card3, bg=COR_BG_CARD)
         frame_saida.pack(fill="x", pady=(5, 0))
@@ -618,7 +619,7 @@ class ConversorApp:
         )
 
         # ── Log ──
-        card_log = self._criar_card(container, "📋 LOG")
+        card_log = self._criar_card(container, "🙊 LOG")
 
         self.txt_log = tk.Text(
             card_log, height=6, font=("Consolas", 9),
